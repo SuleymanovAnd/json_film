@@ -32,8 +32,18 @@ int main() {
     AvatarFilm.characters["Ronal"] = "Kate Winslet";
     AvatarFilm.characters ["Tonowari"] = "Cliff Curtis";
 
+    nlohmann::json AvatarF;
 
+    AvatarF["name"] = AvatarFilm.name;
+    AvatarF["country"] = AvatarFilm.country;
+    AvatarF["date"] = AvatarFilm.date;
+    AvatarF["studio"] = AvatarFilm.studio;
+    AvatarF["director"] = AvatarFilm.director;
+    AvatarF["producer"] = AvatarFilm.producer;
+    AvatarF["characters"] = AvatarFilm.characters;
 
-
+    std::ofstream file ("Avatar_Film.json");
+    file << AvatarF;
+    file.close();
 
 }
