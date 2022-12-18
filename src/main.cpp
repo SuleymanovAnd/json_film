@@ -22,6 +22,7 @@ int main() {
     AvatarFilm.country = "USA";
     AvatarFilm.date = 2022;
     AvatarFilm.studio = "20th Century Studios, Lightstorm Entertainment, TSG Entertainment";
+    AvatarFilm.author = "James Cameron";
     AvatarFilm.director = "James Cameron";
     AvatarFilm.producer = "James Cameron";
 
